@@ -8,7 +8,8 @@
             <span class="text-white">
                 Ligue para o número 4002-8922 <br>
                 Rua Tuiuti, 2123
-            </span>
+            </span><br>
+            <?php include_once "partes/iframe.html";?>
         </div>
         <div class="col-12 col-lg-6 py-2" style="background: #212F3D;">
             <p class="text-center h2">Envie uma mensagem por aqui</p>

@@ -1,3 +1,5 @@
+<?php
+if(!isset($_SESSION['princdatui']['nome'])){?>
 <section id="cadastro" class="container-fluid menus">
     <header class="row">
        <div class="col-12"><p class="faleConosco text-center">Acesse o site</p></div>
@@ -46,3 +48,4 @@
     </article>
     <br>
 </section>
+<?php }?>

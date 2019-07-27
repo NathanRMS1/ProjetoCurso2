@@ -1,17 +1,17 @@
 <div id="produtos" class="container-fluid menus">
-    <div class="row">
+    <div class="row align-items-end">
         <?php
         $pedirProdutos="SELECT * FROM produtos ORDER BY id asc LIMIT 6";
         $ExePedirP=$conectar->query($pedirProdutos);
         while($a=$ExePedirP->fetch_assoc()){
         ?>
-        <div class="col-6 col-lg-4 bg-secondary py-2">
+        <div class="col-6 col-lg-4 py-2">
             <figure class="rounded figure col-12" id="produto<?php echo $a['id'];?>">
                 <img class="figure-img img-fluid rounded" src="img/<?php echo $a['imagem']?>" alt="<?php echo $a['nome'];?>">
                 <figcaption class="text-justify text-truncate"><?php echo $a['descricao'];?></figcaption>
             </figure>
-            <div class="col-12 bg-dark rounded" style="padding:0;">
-                <button class="btn btn-block text-light" data-toggle="modal" data-target="#modal-<?php echo $a['id'];?>">
+            <div class="col-12 bg-light rounded" style="padding:0;align-items:flex-end;">
+                <button class="btn btn-block" data-toggle="modal" data-target="#modal-<?php echo $a['id'];?>">
                     Saiba mais
                 </button>
             </div>

@@ -1,3 +1,12 @@
+------ Versão 0.7.0 ------
+novo:
+-Sistema de login funcional
+-nivel de pessoa adicionado
+modificado:
+-produtos na base
+problemas:
+-criando adicionar produto
+
 ------ Versão 0.6.4 ------
 29/06/19
 -Responsivo

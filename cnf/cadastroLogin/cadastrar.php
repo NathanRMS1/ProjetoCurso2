@@ -1,19 +1,34 @@
 <?php
+require "../conexao.php";
+session_start();
 if(isset($_POST['salvar'])){
-    require "../conexao.php";
 #include "conexao.php";
 #if(!isset($_POST['salvar']))   !===NOT
     $nome=$_POST['nome'];
     $email=$_POST['email'];
     $password=$_POST['password'];
-    $insert= $conectar->query("INSERT INTO usuario(nome, email, senha) VALUES('$nome','$email','$password')");
-    if ($insert){
-        echo "it works!!!";
+    $filtroQr="SELECT * FROM usuario WHERE email='$email'";# AND senhac='$senhac'
+    $filtro=$conectar->query($filtroQr);
+    if(mysqli_num_rows($filtro)>0){
+            ?>
+    <script>alert("Este e-mail já existe!");</script>
+    <meta http-equiv="refresh" content="0;../../index.php">
+            <?php 
     }else{
-        echo 'tente novamente mais tarde';
+        $insert= $conectar->query("INSERT INTO usuario(nome, email, senha, nivel) VALUES('$nome','$email','$password','0')");
+        if ($insert){
+            $onibuscarro=$conectar->query("SELECT * FROM usuario WHERE email='$email' && senha='$password'");
+            while ($row=$onibuscarro->fetch_assoc()){
+                print_r($row);
+                $_SESSION['princdatui']=$row;
+            }
+            echo '<meta content="0;../../index.php" http-equiv="refresh">';
+        }else{
+            echo '<script>alert("tente novamente mais tarde");</script>';
+        }
     }
 }else{
-    echo 'deu errado :/';
+    echo 'ué';
     echo '<meta content="3;../../index.php" http-equiv="refresh">';
 }
 

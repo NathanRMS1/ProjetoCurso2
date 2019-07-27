@@ -1,5 +1,5 @@
-<section class="container menus pb-3" id="about">
-    <div class="bg-light row">
+<section class="container menus py-3" id="about">
+    <div class="bg-light row" style="opacity:0.75;">
         <div class="col-12 text-dark"><p class="faleConosco text-center">Sobre Nós</p></div>
         <div class="col-12" style="height:1px;background-color:#002;margin:-15px 0 0 0"></div>
         <div class="col-12 text-justify text-break text-dark">
