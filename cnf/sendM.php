@@ -3,7 +3,7 @@
 session_start();
 require 'conexao.php';
 if(isset($_POST['salvar'])){
-    $idUser=$_SESSION['princdatui']['id'];
+    if(isset($_SESSION['princdatui']['id'])){$idUser=$_SESSION['princdatui']['id'];}else{$idUser=0;}
     $nome=$_POST['nome'];
     $email=$_POST['email'];
     $tel=$_POST['telefone'];
@@ -14,7 +14,7 @@ if(isset($_POST['salvar'])){
         echo '<meta content="0;../index.php" http-equiv="refresh">';
     }else{
         echo '<script>alert("Mensagem não enviada");</script>';
-        echo '<meta content="0;../index.php" http-equiv="refresh">';
+        #echo '<meta content="0;../index.php" http-equiv="refresh">';
     }
 }else{
     echo '<script>alert("Erro!");</script>';

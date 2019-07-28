@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <?php 
 require_once 'cnf/conexao.php';
+require_once 'cnf/functions.php';
 if(isset($_GET['logout'])){
 	session_start();
 	session_destroy();
 	echo '<meta http-equiv="refresh" content="0;index.php">';
+    die;
 }else{
 	session_start();
 }

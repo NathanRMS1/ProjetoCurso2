@@ -24,6 +24,7 @@ if(isset($_POST['salvar'])){
             echo '<meta content="0;../../index.php" http-equiv="refresh">';
         }else{
             echo '<script>alert("tente novamente mais tarde");</script>';
+            echo '<meta content="0;../../index.php" http-equiv="refresh">';
         }
     }
 }else{

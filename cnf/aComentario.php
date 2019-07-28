@@ -1,10 +1,10 @@
 <?php
-#origem raiz/partes/landing_page/acesso.php
+#origem raiz/partes/landing_page/modal/corpo.php
 session_start();
 require "conexao.php";
 if(isset($_POST['salvar'])){
     $idP=(int)$_POST['idProduto'];
-    $idU=(int)$_POST['idUser'];
+    $idU=(int)$_SESSION['princdatui']['id'];
     $comentario=$_POST['comment'];
     $insert=$conectar->query("INSERT INTO comentario(idProduto,idUser,comentario) VALUES('$idP','$idU','$comentario')");
     if($insert){
@@ -15,7 +15,7 @@ if(isset($_POST['salvar'])){
         echo gettype($idU); echo "<br>";
         echo gettype($comentario);
         echo '<script>alert("Comentário não adicionado");</script>';
-        #echo '<meta content="0;../index.php" http-equiv="refresh">';
+        echo '<meta content="0;../index.php" http-equiv="refresh">';
     }
 }else{
     echo '<script>alert("Erro!");</script>';

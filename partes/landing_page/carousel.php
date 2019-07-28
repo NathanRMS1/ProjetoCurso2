@@ -3,11 +3,11 @@
 <div id="carouselExampleControls" class="carousel slide carousel-fade my-2" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/imgB" class="d-block w-100" alt="...">
+      <img src="img/imgB.png" class="d-block w-100" alt="...">
     </div>
     <!-- copiar e colar esse bloco p/ adicionar mais {-->
     <div class="carousel-item">
-      <img src="img/imgB" class="d-block w-100" alt="...">
+      <img src="img/imgB.png" class="d-block w-100" alt="...">
     </div>
     <!-- } -->
   </div>
