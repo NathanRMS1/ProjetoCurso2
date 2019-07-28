@@ -1,5 +1,5 @@
 # Versão 0.7.2b
-- 28/07/19
+>28/07/19
 ## novo:
 - Bancos de dados para importação atualizados (tinha esquecido :P)
 - required adicionado as tags de login/cadastro
