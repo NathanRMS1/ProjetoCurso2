@@ -1,4 +1,5 @@
 <?php
+$ari='Ariosvaldo da Silva Neves de Oliveira Pereira Barros do Nascimento Gomes da Silva Sauro';
 if(!isset($_SESSION['princdatui']['nome'])){?>
 <section id="cadastro" class="container-fluid menus">
     <header class="row">
@@ -11,11 +12,11 @@ if(!isset($_SESSION['princdatui']['nome'])){?>
                 <div class="row">
                     <div class="form-group col-6 col-lg-12">
                         <label for="inputEmail" class="text-white">Insira seu email</label>
-                        <input type="email" class="form-control" name="email" placeholder="ari@osvaldo.com">
+                        <input type="email" class="form-control" name="email" placeholder="ari@osvaldo.com" required>
                     </div>
                     <div class="form-group col-6 col-lg-12">
                         <label for="inputPassword" class="text-white">Insira sua senha</label>
-                        <input type="password" class="form-control" name="password" placeholder="******">
+                        <input type="password" class="form-control" name="password" placeholder="******" required>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-success form-control" name="salvar" class="submit">Logar</button>
@@ -27,19 +28,19 @@ if(!isset($_SESSION['princdatui']['nome'])){?>
                 <div class="row">
                     <div class="form-group col-4 col-lg-12 float-left">
                         <label for="inserirNome" class="text-white">Insira seu nome</label>
-                        <input type="text" class="form-control" name="nome" placeholder="Ariosvaldo Risos Cledivanderson da Silva Neves">
+                        <input type="text" class="form-control" name="nome" placeholder="<?php echo $ari?>" required>
                     </div>
                     <div class="form-group col-4 col-lg-12 float-left">
                         <label for="inserirEmail" class="text-white">Insira seu email</label>
-                        <input type="email" class="form-control" name="email" placeholder="ari@osvaldo.com">
+                        <input type="email" class="form-control" name="email" placeholder="ari.osvaldo@exemplo.com" required>
                         <label for="inserirEmailR" class="text-white">Repita seu email</label>
-                        <input type="email" class="form-control" placeholder="ari@osvaldo.com">
+                        <input type="email" class="form-control" placeholder="ari.osvaldo@exemplo.com" required>
                     </div>
                     <div class="form-group col-4 col-lg-12 float-left">
                         <label for="inserirSenha" class="text-white">Insira sua senha</label>
-                        <input type="password" class="form-control" name="password" placeholder="******">
+                        <input type="password" class="form-control" name="password" placeholder="******" required>
                         <label for="inserirSenhaR" class="text-white">Repita sua senha</label>
-                        <input type="password" class="form-control" placeholder="******">
+                        <input type="password" class="form-control" placeholder="******" required>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-success form-control" name="salvar">Cadastre-se</button>

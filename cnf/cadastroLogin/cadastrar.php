@@ -18,7 +18,6 @@ if(isset($_POST['salvar'])){
         if ($insert){
             $onibuscarro=$conectar->query("SELECT * FROM usuario WHERE email='$email' && senha='$password'");
             while ($row=$onibuscarro->fetch_assoc()){
-                print_r($row);
                 $_SESSION['princdatui']=$row;
             }
             echo '<meta content="0;../../index.php" http-equiv="refresh">';
