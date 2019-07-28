@@ -24,10 +24,10 @@ if(isset($_GET['logout'])){
         <?php include_once 'partes/landing_page/topo.php';?> 
         <section class="content text-white bg-transparent"><!-- banners -->
             <?php include_once 'partes/landing_page/carousel.php';?><!-- Região das comidas -->
-            <?php include_once 'partes/landing_page/produtos2.php';?> <!-- Fale Conosco -->
+            <?php include_once 'partes/landing_page/produtos.php';?> <!-- Fale Conosco -->
             <?php include_once 'partes/landing_page/contato.php';?> <!-- login e cadastro -->
-            <?php include_once 'partes/landing_page/acesso.php';?> <!-- sobre nós -->
-            <?php if(isset($_SESSION['princdatui']['nome'])){if(($_SESSION['princdatui']['nivel'])!=0){include_once 'partes/adm/addProduto.php';}}?> <!-- sobre nós -->
+            <?php include_once 'partes/landing_page/acesso.php';?>
+            <?php if(isset($_SESSION['princdatui']['nome'])){if(($_SESSION['princdatui']['nivel'])!=0){include_once 'partes/adm/addProduto.php';}}?><!-- sobre nós -->
             <?php include_once 'partes/landing_page/about.php';?>
         </section>
     </div>

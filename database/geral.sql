@@ -12,3 +12,10 @@ CREATE TABLE usuario(
     email varchar(255),
     senha varchar(255)
 )ENGINE INNODB;
+CREATE TABLE mensagens(
+    id int(11) PRIMARY KEY AUTO_INCREMENT,
+    idUser int(11),
+    email varchar(255),
+    tel varchar(255),
+    mensagem varchar(255)
+)ENGINE INNODB;

@@ -1,9 +1,27 @@
+------ Versão 0.7.1 ------
+28/07/19 00:00
+problemas:
+sistema de comentários (não entendo nada, vou dormir)
+------ Versão 0.7.0b ------
+27/07/19
+novo:
+-Sistema de mensagens funcionando (apenas para envios, sem visualizações ou modificações)
+resolvido:
+-adicionar produto finalizado
+problemas:
+-terminar o sistema de mensagens
+-criar reserva de mesa
+-criar agendamento de festa
+-criar sistema de entrega de produto
+-adicionar comentários aos produtos
+
 ------ Versão 0.7.0 ------
+27/07/19
 novo:
 -Sistema de login funcional
 -nivel de pessoa adicionado
 modificado:
--produtos na base
+-produtos na base(css)
 problemas:
 -criando adicionar produto
 

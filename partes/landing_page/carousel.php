@@ -5,9 +5,11 @@
     <div class="carousel-item active">
       <img src="img/imgB" class="d-block w-100" alt="...">
     </div>
+    <!-- copiar e colar esse bloco p/ adicionar mais {-->
     <div class="carousel-item">
       <img src="img/imgB" class="d-block w-100" alt="...">
     </div>
+    <!-- } -->
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

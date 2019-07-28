@@ -1,4 +1,5 @@
 <?php 
+#origem raiz/partes/landing_page/acesso.php
 session_start();
 require '../conexao.php';
 if(isset($_POST['salvar'])){

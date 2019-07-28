@@ -1,13 +1,12 @@
 <?php
-require "../conexao.php";
+#origem raiz/partes/landing_page/acesso.php
 session_start();
+require "../conexao.php";
 if(isset($_POST['salvar'])){
-#include "conexao.php";
-#if(!isset($_POST['salvar']))   !===NOT
     $nome=$_POST['nome'];
     $email=$_POST['email'];
     $password=$_POST['password'];
-    $filtroQr="SELECT * FROM usuario WHERE email='$email'";# AND senhac='$senhac'
+    $filtroQr="SELECT * FROM usuario WHERE email='$email'";
     $filtro=$conectar->query($filtroQr);
     if(mysqli_num_rows($filtro)>0){
             ?>

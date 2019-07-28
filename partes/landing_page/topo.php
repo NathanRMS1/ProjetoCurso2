@@ -15,7 +15,7 @@
             <?php
             if(isset($_SESSION['princdatui']['nome'])){
             ?>
-            <li class="nav-item nav-link bg-dark"><a class="nav-link text-white" href="index.php?logout"><?php echo $_SESSION['princdatui']['nome']?>Logout</a></li>
+            <li class="nav-item nav-link bg-dark"><a class="nav-link text-white" href="index.php?logout">Logout</a></li>
             <?php
                 if(($_SESSION['princdatui']['nivel'])!=0){
                     ?>

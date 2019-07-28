@@ -9,15 +9,15 @@
                 <div class="row">
                     <div class="form-group col-12">
                         <label for="" class="text-white">Nome do produto:</label>
-                        <input class="form-control" type="text" name="nome" placeholder="Insira seu nome">
+                        <input class="form-control" type="text" name="nome" placeholder="Coxinha">
                     </div>
                     <div class="form-group col-12">
                         <label for="" class="text-white">Descrição:</label>
-                        <input class="form-control" type="text" name="desc" placeholder="Insira seu e-mail">
+                        <input class="form-control" type="text" name="desc" placeholder="Algo muito delicioso">
                     </div>
                     <div class="form-group col-12">
                         <label for="" class="text-white">Nome da imagem:</label>
-                        <input class="form-control" type="text" name="img" placeholder="Insira seu número de telefone">
+                        <input class="form-control" type="text" name="img" placeholder="imgcoxinha.png">
                     </div>
                 </div>
                 <button type="submit" class="btn btn-success form-control" name="salvar">Adicionar</button>
