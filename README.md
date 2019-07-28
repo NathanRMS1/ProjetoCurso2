@@ -1,3 +1,10 @@
+------ Versão 0.7.2 ------
+resolvido:
+-sistema de Comentários adicionado
+novo:
+-remover comentário adicionado
+ambos funcionais
+
 ------ Versão 0.7.1 ------
 28/07/19 00:00
 problemas:
