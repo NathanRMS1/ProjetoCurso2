@@ -15,15 +15,15 @@ if($secaoComentarios){
     ?>
     <div class="row bg-dark text-white py-2 m-1 rounded">
         <div class="col-12">
-            <form action="cnf/rComentario.php" method="post">
-                <span class="h5"><?php echo $g['nome'];?></span><span class="text-secondary px-2"><?php echo $g['email']?></span><?php
+            <span class="h5"><?php echo lmWord($g['nome']);?></span><span class="text-secondary px-2"><?php echo $g['email']?></span>
+                <?php
                 if(isset($_SESSION['princdatui'])){
                     if($_SESSION['princdatui']['nivel']!=0 or $com['idUser']==$_SESSION['princdatui']['id']){
                 ?>
+            <form action="cnf/rComentario.php" method="post">
                 <input type="hidden" name="idComen" value="<?php echo $com['id'];?>">
                 <button type="submit" name="salvar" class="btn btn-info">Remover comentário</button>
             </form>
-            <!-- <button class="btn btn-info" data-toggle="modal" data-target="#modal-8">teste</button> -->
             <?php
                 }
             }

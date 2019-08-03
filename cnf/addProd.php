@@ -1,6 +1,7 @@
 <?php
-require "conexao.php";
+#origem raiz/index.php
 session_start();
+require "conexao.php";
 if(isset($_POST['salvar'])){
     $nome=$_POST['nome'];
     $desc=$_POST['desc'];
@@ -13,6 +14,7 @@ if(isset($_POST['salvar'])){
     }
     echo '<meta content="0;../index.php" http-equiv="refresh">';
 }else{
+    echo '<script>alert("Erro em cnfProd.php!");</script>';
     echo '<meta content="0;../index.php" http-equiv="refresh">';
 }
 ?>

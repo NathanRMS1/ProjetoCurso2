@@ -14,14 +14,15 @@ if(isset($_GET['logout'])){
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <?php include_once 'cnf/conexao.php';?>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/css.css">
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/navegar.js"></script>
     <title>Página Inicial</title>
 </head>
-<body>
+<body id="topo">
     <div class="container-fluid bg-dark"><!-- menu do topo -->
         <?php include_once 'partes/landing_page/topo.php';?> 
         <section class="content text-white bg-transparent"><!-- banners -->
@@ -30,7 +31,9 @@ if(isset($_GET['logout'])){
             <?php include_once 'partes/landing_page/contato.php';?> <!-- login e cadastro -->
             <?php include_once 'partes/landing_page/acesso.php';?>
             <?php if(isset($_SESSION['princdatui']['nome'])){if(($_SESSION['princdatui']['nivel'])!=0){include_once 'partes/adm/addProduto.php';}}?><!-- sobre nós -->
-            <?php include_once 'partes/landing_page/about.php';?>
+            <?php include_once 'partes/landing_page/about.php';
+            if(isset($_SESSION['princdatui']['nome'])){include_once "partes/landing_page/modal/user.php";}
+            ?>
         </section>
     </div>
 </body>

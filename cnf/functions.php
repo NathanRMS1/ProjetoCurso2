@@ -9,7 +9,7 @@ function BuscarProdutos($tabela,$condicoes = NULL){
   GERA RESUMOS
  * *************************** */
 
-function lmWord($string, $words = '20') {
+function lmWord($string, $words = '30') {
     $string = strip_tags($string);
     $count = strlen($string);
 

@@ -19,20 +19,20 @@
                     ?>
                     <div class="form-group col-6 col-lg-12">
                         <label for="" class="text-white">Nome:</label>
-                        <input class="form-control" type="text" name="nome" placeholder="Insira seu nome">
+                        <input class="form-control" type="text" name="nome" placeholder="Insira seu nome" required="required">
                     </div>
                     <div class="form-group col-6 col-lg-12">
                         <label for="" class="text-white">E-mail:</label>
-                        <input class="form-control" type="email" name="email" placeholder="Insira seu e-mail">
+                        <input class="form-control" type="email" name="email" placeholder="Insira seu e-mail" required="required">
                     </div>
                     <?php }else{ #caso exista?>
                     <div class="form-group col-6 col-lg-12">
                         <label for="" class="text-white">Nome:</label>
-                        <input class="form-control" type="text" name="nome" value="<?php echo $_SESSION['princdatui']['nome']?>" placeholder="Insira seu nome">
+                        <input class="form-control" type="text" name="nome" value="<?php echo $_SESSION['princdatui']['nome']?>" placeholder="Insira seu nome" required="required">
                     </div>
                     <div class="form-group col-6 col-lg-12">
                         <label for="" class="text-white">E-mail:</label>
-                        <input class="form-control" type="email" name="email" value="<?php echo $_SESSION['princdatui']['email']?>" placeholder="Insira seu e-mail">
+                        <input class="form-control" type="email" name="email" value="<?php echo $_SESSION['princdatui']['email']?>" placeholder="Insira seu e-mail" required="required">
                     </div>
                     <?php }?>
                     <div class="form-group col-6 col-lg-12">
