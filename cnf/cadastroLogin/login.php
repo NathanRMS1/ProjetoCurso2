@@ -11,11 +11,10 @@ if(isset($_POST['salvar'])){
         while ($row=$onibuscarro->fetch_assoc()){
             $_SESSION['princdatui']=$row;
         }
-        echo '<meta content="0;../../index.php" http-equiv="refresh">';
     }else{
         echo '<script>alert("Email ou senha incorretos");</script>';
-        echo '<meta content="0;../../index.php" http-equiv="refresh">';
     }
+    echo '<meta content="0;../../index.php" http-equiv="refresh">';
 }else{
     echo '<script>alert("Email ou senha incorretos");</script>';
     echo '<meta content="0;../../index.php" http-equiv="refresh">';

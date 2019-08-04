@@ -2,8 +2,8 @@
 $host="localhost";
 $user="root";
 $pass="";
-$db="princesinha";
-$conectar= new mysqli($host,$user,$pass,$db);
+$bancoDeDados="princesinha";
+$conectar= new mysqli($host,$user,$pass,$bancoDeDados);
 /*
 BANCO DE DADOS:
 CREATE DATABASE s16 DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci ENGINE=INNODB;

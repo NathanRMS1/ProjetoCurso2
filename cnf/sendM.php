@@ -11,11 +11,10 @@ if(isset($_POST['salvar'])){
     $insert= $conectar->query("INSERT INTO mensagens(idUser,nome,email,tel,mensagem) VALUES('$idUser','$nome','$email','$tel','$msg')");
     if ($insert){
         echo '<script>alert("Mensagem enviada");</script>';
-        echo '<meta content="0;../index.php" http-equiv="refresh">';
     }else{
         echo '<script>alert("Mensagem não enviada");</script>';
-        #echo '<meta content="0;../index.php" http-equiv="refresh">';
     }
+    echo '<meta content="0;../index.php" http-equiv="refresh">';
 }else{
     echo '<script>alert("Erro!");</script>';
     echo '<meta content="0;../index.php" http-equiv="refresh">';

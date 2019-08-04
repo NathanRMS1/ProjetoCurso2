@@ -6,7 +6,7 @@
         ?>
         <div class="col-6 col-lg-4 py-2">
             <figure class="rounded figure col-12" id="produto<?php echo $a['id'];?>">
-                <img class="figure-img img-fluid rounded" src="img/<?php echo $a['imagem']?>" alt="<?php echo $a['nome'];?>">
+                <img class="figure-img img-fluid rounded" src="img/produtos/<?php echo $a['imagem']?>" alt="<?php echo $a['nome'];?>">
                 <figcaption class="text-justify text-truncate"><?php echo $a['descricao'];?></figcaption>
             </figure>
             <div class="col-12 bg-light rounded" style="padding:0;align-items:flex-end;">

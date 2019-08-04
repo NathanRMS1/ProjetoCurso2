@@ -9,14 +9,13 @@ if(isset($_POST['salvar'])){
     $insert=$conectar->query("INSERT INTO comentario(idProduto,idUser,comentario) VALUES('$idP','$idU','$comentario')");
     if($insert){
         echo '<script>alert("Comentário adicionado");</script>';
-        echo '<meta content="0;../index.php" http-equiv="refresh">';
     }else{
         echo gettype($idP); echo "<br>";
         echo gettype($idU); echo "<br>";
         echo gettype($comentario);
         echo '<script>alert("Comentário não adicionado");</script>';
-        echo '<meta content="0;../index.php" http-equiv="refresh">';
     }
+    echo '<meta content="0;../index.php" http-equiv="refresh">';
 }else{
     echo '<script>alert("Erro!");</script>';
     echo '<meta content="0;../index.php" http-equiv="refresh">';

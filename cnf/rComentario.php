@@ -7,11 +7,10 @@ if(isset($_POST['salvar'])){
     $remover=$conectar->query("DELETE FROM comentario WHERE id=$idComm");
     if($remover){
         echo '<script>alert("Comentário Removido");</script>';
-        echo '<meta content="0;../index.php" http-equiv="refresh">';
     }else{
         echo '<script>alert("Comentário não Removido");</script>';
-        echo '<meta content="0;../index.php" http-equiv="refresh">';
     }
+    echo '<meta content="0;../index.php" http-equiv="refresh">';
 }else{
     echo '<script>alert("Erro na remoção do comentário!");</script>';
     echo '<meta content="0;../index.php" http-equiv="refresh">';
