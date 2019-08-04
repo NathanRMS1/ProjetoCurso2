@@ -23,16 +23,16 @@ if(isset($_GET['logout'])){
     <title>Página Inicial</title>
 </head>
 <body id="topo">
-    <div class="container-fluid bg-dark"><!-- menu do topo -->
+    <div class="container-fluid bg-dark">
         <?php include_once 'partes/landing_page/topo.php';?> 
-        <section class="content text-white bg-transparent"><!-- banners -->
-            <?php include_once 'partes/landing_page/carousel.php';?><!-- Região das comidas -->
-            <?php include_once 'partes/landing_page/produtos.php';?> <!-- Fale Conosco -->
-            <?php include_once 'partes/landing_page/contato.php';?> <!-- login e cadastro -->
+        <section class="content text-white bg-transparent">
+            <?php include_once 'partes/landing_page/carousel.php';?>
+            <?php include_once 'partes/landing_page/produtos.php';?>
+            <?php include_once 'partes/landing_page/contato.php';?>
             <?php include_once 'partes/landing_page/acesso.php';?>
-            <?php if(isset($_SESSION['princdatui']['nome'])){if(($_SESSION['princdatui']['nivel'])!=0){include_once 'partes/adm/addProduto.php';}}?><!-- sobre nós -->
+            <?php if(isset($_SESSION['princdatui'])){if(($_SESSION['princdatui']['nivel'])!=0){include_once 'partes/adm/addProduto.php';}}?>
             <?php include_once 'partes/landing_page/about.php';
-            if(isset($_SESSION['princdatui']['nome'])){include_once "partes/landing_page/modal/user.php";}
+            if(isset($_SESSION['princdatui'])){include_once "partes/landing_page/modal/user.php";}
             ?>
         </section>
     </div>

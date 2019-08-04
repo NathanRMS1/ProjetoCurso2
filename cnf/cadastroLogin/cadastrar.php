@@ -20,12 +20,11 @@ if(isset($_POST['salvar'])){
             while ($row=$onibuscarro->fetch_assoc()){
                 $_SESSION['princdatui']=$row;
             }
-            echo '<meta content="0;../../index.php" http-equiv="refresh">';
             echo '<script>alert("Bem vindo ao site!");</script>';
         }else{
             echo '<script>alert("tente novamente mais tarde");</script>';
-            echo '<meta content="0;../../index.php" http-equiv="refresh">';
         }
+        echo '<meta content="0;../../index.php" http-equiv="refresh">';
     }
 }else{
     echo 'ué';

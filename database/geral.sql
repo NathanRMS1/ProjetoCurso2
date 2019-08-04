@@ -32,5 +32,5 @@ CREATE TABLE `comentario` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_general_mysql500_ci;
 INSERT INTO `usuario` (`id`, `nome`, `email`, `senha`, `nivel`) VALUE
-(1, 'Ariosvaldo da Silva Neves de Oliveira Pereira Barros do Nascimento Gomes da Silva Sauro', 'ari@osvaldo', '4r105v4ld0', 1);
+(1, 'Ariosvaldo da Silva Neves de Oliveira Pereira Barros do Nascimento Gomes da Silva Sauro', 'ari@osvaldo.com', '4r105v4ld0', 1);
 COMMIT;

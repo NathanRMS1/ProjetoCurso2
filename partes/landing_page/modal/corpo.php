@@ -3,7 +3,7 @@
 require "cnf/conexao.php";
 ?>
 <figure class="figure">
-    <img class="figure-img img-fluid rounded" src="img/<?php echo $a['imagem'];?>" alt="coxinha">
+    <img class="figure-img img-fluid rounded" src="img/produtos/<?php echo $a['imagem'];?>" alt="coxinha">
     <figcaption class="figure-caption"><?php echo $a['descricao'];?></figcaption>
 </figure>
 <?php
