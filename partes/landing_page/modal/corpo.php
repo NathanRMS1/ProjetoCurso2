@@ -10,26 +10,26 @@ require "cnf/conexao.php";
 $secaoComentarios=$conectar->query("SELECT * FROM comentario WHERE idProduto=$a[id] ORDER BY id DESC LIMIT 9");
 if($secaoComentarios){
     while($com=$secaoComentarios->fetch_assoc()){
-        $comentario=$conectar->query("SELECT * FROM usuario WHERE id=$com[idUser] ORDER BY id DESC LIMIT 9");
+        $comentario=$conectar->query("SELECT * FROM usuario WHERE id=$com[idUser]");
         while($g=$comentario->fetch_assoc()){
     ?>
     <div class="row bg-dark text-white py-2 m-1 rounded">
-        <div class="col-12">
+        <div class="col-8">
             <span class="h5"><?php echo lmWord($g['nome']);?></span><span class="text-secondary px-2"><?php echo $g['email']?></span>
-                <?php
+        </div>
+            <?php
                 if(isset($_SESSION['princdatui'])){
                     if($_SESSION['princdatui']['nivel']!=0 or $com['idUser']==$_SESSION['princdatui']['id']){
-                ?>
-            <form action="cnf/rComentario.php" method="post">
+            ?>
+            <form action="cnf/rComentario.php" method="post" class="col-4">
                 <input type="hidden" name="idComen" value="<?php echo $com['id'];?>">
-                <button type="submit" name="salvar" class="btn btn-info">Remover comentário</button>
+                <button type="submit" name="salvar" class="btn btn-info float-right">Remover comentário</button>
             </form>
             <?php
+                    }
                 }
-            }
             ?>
-        </div>
-        <div class="col-12"><span class="h3">
+        <div class="col-12"><span class="h6">
             <?php
             echo $com['comentario'];
             ?>

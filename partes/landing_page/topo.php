@@ -25,9 +25,12 @@ $btnSemEstilo='background: none;color: inherit;border: none;padding: .5rem 1rem;
             ?>
             <li class="nav-item nav-link bg-dark text-white"><button style="<?php echo $btnSemEstilo;?>" class="nav-link text-white" data-toggle="modal" data-target="#modal-user">Editar perfil</button></li>
             <li class="nav-item nav-link bg-dark"><a class="nav-link text-white" href="index.php?logout">Logout</a></li>
-            <?php
-            }
-            ?>
         </ul>
     </nav>
 </header>
+            <?php
+                include_once "partes/landing_page/modal/user.php";
+            }else{
+                echo "</ul></nav></header>";
+            }
+?>

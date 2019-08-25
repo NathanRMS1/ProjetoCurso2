@@ -6,6 +6,7 @@ if(isset($_POST['salvar'])){
     $idP=(int)$_POST['idProduto'];
     $idU=(int)$_SESSION['princdatui']['id'];
     $comentario=$_POST['comment'];
+    $comentario=preg_replace('/[\r\n]{1,}/','<br>',$comentario);
     $insert=$conectar->query("INSERT INTO comentario(idProduto,idUser,comentario) VALUES('$idP','$idU','$comentario')");
     if($insert){
         echo '<script>alert("Comentário adicionado");</script>';
