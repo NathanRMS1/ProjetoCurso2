@@ -42,12 +42,12 @@ CREATE TABLE IF NOT EXISTS `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `descricao`, `imagem`) VALUES
-(1, 'Coxinha', 'Coxinha Coxinha', 'imgCoxinha.png'),
-(2, 'Batata Frita', 'Fries', 'imgBatataFrita.jpeg'),
-(3, 'Almoço', 'Vamos ao mossar', 'imgLunch.png'),
-(4, 'Coxinha', 'Coxinha Coxinha', 'imgCoxinha.png'),
-(5, 'Almoço', 'Vamos ao mossar', 'imgLunch.png'),
-(6, 'Batata Frita', 'Fries', 'imgBatataFrita.jpeg');
+(1, 'Coxinha', 'Produto delicioso', 'imgCoxinha.png'),
+(2, 'Batata Frita', 'Batata frita com vários condimentos, entre eles: Sal, Ketchup, Mostarda, Bacon e Cheddar', 'imgBatataFrita.jpeg'),
+(3, 'Almoço', 'Arroz, Feijão, Bife e Salada', 'imgLunch.png'),
+(4, 'Coxinha', 'Produto delicioso', 'imgCoxinha.png'),
+(5, 'Almoço', 'Arroz, Feijão, Bife e Salada', 'imgLunch.png'),
+(6, 'Batata Frita', 'Batata frita com vários condimentos, entre eles: Sal, Ketchup, Mostarda, Bacon e Cheddar', 'imgBatataFrita.jpeg')
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

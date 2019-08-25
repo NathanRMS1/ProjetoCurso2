@@ -30,10 +30,8 @@ if(isset($_GET['logout'])){
             <?php include_once 'partes/landing_page/produtos.php';?>
             <?php include_once 'partes/landing_page/contato.php';?>
             <?php include_once 'partes/landing_page/acesso.php';?>
+            <?php include_once 'partes/landing_page/about.php';?>
             <?php if(isset($_SESSION['princdatui'])){if(($_SESSION['princdatui']['nivel'])!=0){include_once 'partes/adm/addProduto.php';}}?>
-            <?php include_once 'partes/landing_page/about.php';
-            if(isset($_SESSION['princdatui'])){include_once "partes/landing_page/modal/user.php";}
-            ?>
         </section>
     </div>
 </body>

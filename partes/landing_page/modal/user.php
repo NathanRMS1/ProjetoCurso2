@@ -1,4 +1,6 @@
-<!-- Modal -->
+<?php
+#origem raiz/partes/landing_page/topo.php
+?>
 <div class="modal fade text-dark" id="modal-user" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-md modal-dialog-centered" role="document">
         <div class="modal-content">

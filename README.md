@@ -14,6 +14,14 @@
 - Sistema de mensagens apenas armazena. A ideia é que as mensagens aparecam para qualquer administrador.
 
 # Versões
+## Versão 0.7.4
+>24/08/19
+### novo:
+- Mensagens podem ser visualizadas e removidas pelo administrador
+### modificado
+- Quebra de linha nos comentários em funcionamento
+- Botões de "Disponível no iFood e Uber Eats adicionados"
+
 ## Versão 0.7.3
 >03/08/19 mais tarde
 ### novo:
